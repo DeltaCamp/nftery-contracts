@@ -1,7 +1,151 @@
 {
-  "contracts": {},
+  "contracts": {
+    "Migrations": {
+      "address": "0xB38a41695b12a7C24A5948cAB35A886619686DaC",
+      "constructorCode": "608060405234801561001057600080fd5b506107f3806100206000396000f3fe",
+      "bodyBytecodeHash": "8ce686c386ee2d839e68907c6b00213a250b2b71d5d385788b2504694017187e",
+      "localBytecodeHash": "21f928ef4a96eca9359c862565a8aa1ac7e81ce8c2d6c248ce3c76b54e033140",
+      "deployedBytecodeHash": "21f928ef4a96eca9359c862565a8aa1ac7e81ce8c2d6c248ce3c76b54e033140",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 1748,
+          "type": "t_bool",
+          "src": "757:24:16"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 1750,
+          "type": "t_bool",
+          "src": "876:25:16"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 1799,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:16"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "_owner",
+          "astId": 321,
+          "type": "t_address",
+          "src": "302:22:6"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "______gap",
+          "astId": 432,
+          "type": "t_array:50<t_uint256>",
+          "src": "2186:29:6"
+        },
+        {
+          "contract": "Migrations",
+          "path": "contracts/Migrations.sol",
+          "label": "last_completed_migration",
+          "astId": 6,
+          "type": "t_uint256",
+          "src": "139:36:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    },
+    "Nftery": {
+      "address": "0x2f3464b7a67Ed2Bc9Aec90D268Cb18af99E526bE",
+      "constructorCode": "608060405234801561001057600080fd5b506125de806100206000396000f3fe",
+      "bodyBytecodeHash": "7e0f0b6d82ab79bc10a8609163f147449a58d2a48f44c93d133703cbedcd40f5",
+      "localBytecodeHash": "393830283a8898411297419d66cb4ac05a599c169f837935912e35e5eb6a6643",
+      "deployedBytecodeHash": "393830283a8898411297419d66cb4ac05a599c169f837935912e35e5eb6a6643",
+      "types": {
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_address>": {
+          "id": "t_mapping<t_address>",
+          "valueType": "t_address",
+          "label": "mapping(key => address)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Nftery",
+          "path": "contracts/Nftery.sol",
+          "label": "tokens",
+          "astId": 52,
+          "type": "t_mapping<t_address>",
+          "src": "121:34:1"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
   "solidityLibs": {},
-  "proxies": {},
+  "proxies": {
+    "base-contract-project/Migrations": [
+      {
+        "address": "0x758a66309FCcB6d834d3Cf91b326E2CaEa4bcbdB",
+        "version": "0.1.0",
+        "implementation": "0xB38a41695b12a7C24A5948cAB35A886619686DaC"
+      }
+    ],
+    "base-contract-project/Nftery": [
+      {
+        "address": "0xd0dB1b9a4E70AA1728174b02BBC372207513B847",
+        "version": "0.1.0",
+        "implementation": "0x2f3464b7a67Ed2Bc9Aec90D268Cb18af99E526bE"
+      }
+    ]
+  },
   "zosversion": "2.2",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "proxyAdmin": {
+    "address": "0x116B73bcd56102A6B98206a24AD0396cCb12E6b7"
+  }
 }
