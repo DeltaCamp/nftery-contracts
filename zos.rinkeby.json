@@ -1,11 +1,11 @@
 {
   "contracts": {
     "Migrations": {
-      "address": "0xB38a41695b12a7C24A5948cAB35A886619686DaC",
-      "constructorCode": "608060405234801561001057600080fd5b506107f3806100206000396000f3fe",
-      "bodyBytecodeHash": "8ce686c386ee2d839e68907c6b00213a250b2b71d5d385788b2504694017187e",
-      "localBytecodeHash": "21f928ef4a96eca9359c862565a8aa1ac7e81ce8c2d6c248ce3c76b54e033140",
-      "deployedBytecodeHash": "21f928ef4a96eca9359c862565a8aa1ac7e81ce8c2d6c248ce3c76b54e033140",
+      "address": "0x7a693B439596ac4CE0315A6eB31E31c825141Ce1",
+      "constructorCode": "608060405234801561001057600080fd5b506104bc806100206000396000f3fe",
+      "bodyBytecodeHash": "aa26121ac95242940ad46c03bba7b655d86b3f8b2fedba7d7022f2b5d8677517",
+      "localBytecodeHash": "d81b1b7036cd18a0d761e850620212feaf7933607476112d4c7476878961878d",
+      "deployedBytecodeHash": "d81b1b7036cd18a0d761e850620212feaf7933607476112d4c7476878961878d",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -85,15 +85,17 @@
         "hasSelfDestruct": false,
         "hasDelegateCall": false,
         "hasInitialValuesInDeclarations": false,
-        "uninitializedBaseContracts": []
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
       }
     },
     "Nftery": {
-      "address": "0x2f3464b7a67Ed2Bc9Aec90D268Cb18af99E526bE",
-      "constructorCode": "608060405234801561001057600080fd5b506125de806100206000396000f3fe",
-      "bodyBytecodeHash": "7e0f0b6d82ab79bc10a8609163f147449a58d2a48f44c93d133703cbedcd40f5",
-      "localBytecodeHash": "393830283a8898411297419d66cb4ac05a599c169f837935912e35e5eb6a6643",
-      "deployedBytecodeHash": "393830283a8898411297419d66cb4ac05a599c169f837935912e35e5eb6a6643",
+      "address": "0xa2F99B81c14A11AaD4afF487b4f847487B8C953B",
+      "constructorCode": "608060405234801561001057600080fd5b50611630806100206000396000f3fe",
+      "bodyBytecodeHash": "f8f3ce66e2b6a3d1f5efe05db3dbd1edfab44f0d66a1779686390dedb58b1db7",
+      "localBytecodeHash": "fd8ac4523c2614bd3aeae4a2368ff2fec1ad6bdf0257d6824700906c16f8aab1",
+      "deployedBytecodeHash": "fd8ac4523c2614bd3aeae4a2368ff2fec1ad6bdf0257d6824700906c16f8aab1",
       "types": {
         "t_address": {
           "id": "t_address",
@@ -122,7 +124,261 @@
         "hasSelfDestruct": false,
         "hasDelegateCall": false,
         "hasInitialValuesInDeclarations": false,
-        "uninitializedBaseContracts": []
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    },
+    "Simple721": {
+      "address": "0x191E36cBa3DF054cde5e1EdBF33F2d843d228Acc",
+      "constructorCode": "608060405234801561001057600080fd5b50611470806100206000396000f3fe",
+      "bodyBytecodeHash": "b5b79cc712fcfef80d4a2f1f3291f7199b7a8be997456ab1c27b8c4470e9a662",
+      "localBytecodeHash": "53c4dc3754e0a14aed4cad7c9573a9ce1a97e06c71bfabf33b539f39089ccc85",
+      "deployedBytecodeHash": "53c4dc3754e0a14aed4cad7c9573a9ce1a97e06c71bfabf33b539f39089ccc85",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_address>": {
+          "id": "t_mapping<t_address>",
+          "valueType": "t_address",
+          "label": "mapping(key => address)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_uint256>": {
+          "id": "t_array:dyn<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "dyn",
+          "kind": "array",
+          "label": "uint256[]"
+        },
+        "t_mapping<t_array:dyn<t_uint256>>": {
+          "id": "t_mapping<t_array:dyn<t_uint256>>",
+          "valueType": "t_array:dyn<t_uint256>",
+          "label": "mapping(key => uint256[])",
+          "kind": "mapping"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_string>": {
+          "id": "t_mapping<t_string>",
+          "valueType": "t_string",
+          "label": "mapping(key => string)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 1748,
+          "type": "t_bool",
+          "src": "757:24:16"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 1750,
+          "type": "t_bool",
+          "src": "876:25:16"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 1799,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:16"
+        },
+        {
+          "contract": "ERC165",
+          "path": "openzeppelin-eth/contracts/introspection/ERC165.sol",
+          "label": "_supportedInterfaces",
+          "astId": 131,
+          "type": "t_mapping<t_bool>",
+          "src": "497:52:3"
+        },
+        {
+          "contract": "ERC165",
+          "path": "openzeppelin-eth/contracts/introspection/ERC165.sol",
+          "label": "______gap",
+          "astId": 175,
+          "type": "t_array:50<t_uint256>",
+          "src": "1230:29:3"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenOwner",
+          "astId": 460,
+          "type": "t_mapping<t_address>",
+          "src": "774:48:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenApprovals",
+          "astId": 464,
+          "type": "t_mapping<t_address>",
+          "src": "878:52:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_ownedTokensCount",
+          "astId": 468,
+          "type": "t_mapping<t_uint256>",
+          "src": "988:54:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_operatorApprovals",
+          "astId": 474,
+          "type": "t_mapping<t_bool>",
+          "src": "1097:73:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "______gap",
+          "astId": 1015,
+          "type": "t_array:50<t_uint256>",
+          "src": "11668:29:7"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokens",
+          "astId": 1035,
+          "type": "t_mapping<t_array:dyn<t_uint256>>",
+          "src": "467:50:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokensIndex",
+          "astId": 1039,
+          "type": "t_mapping<t_uint256>",
+          "src": "587:53:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokens",
+          "astId": 1042,
+          "type": "t_array:dyn<t_uint256>",
+          "src": "701:28:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokensIndex",
+          "astId": 1046,
+          "type": "t_mapping<t_uint256>",
+          "src": "800:51:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "______gap",
+          "astId": 1375,
+          "type": "t_array:50<t_uint256>",
+          "src": "8814:29:8"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_name",
+          "astId": 1411,
+          "type": "t_string",
+          "src": "266:20:10"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_symbol",
+          "astId": 1413,
+          "type": "t_string",
+          "src": "313:22:10"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_tokenURIs",
+          "astId": 1417,
+          "type": "t_mapping<t_string>",
+          "src": "381:45:10"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "______gap",
+          "astId": 1546,
+          "type": "t_array:50<t_uint256>",
+          "src": "2824:29:10"
+        },
+        {
+          "contract": "ERC721Full",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Full.sol",
+          "label": "______gap",
+          "astId": 1394,
+          "type": "t_array:50<t_uint256>",
+          "src": "535:29:9"
+        },
+        {
+          "contract": "Simple721",
+          "path": "contracts/Simple721.sol",
+          "label": "lastTokenId",
+          "astId": 98,
+          "type": "t_uint256",
+          "src": "128:27:2"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
       }
     }
   },
@@ -130,22 +386,29 @@
   "proxies": {
     "base-contract-project/Migrations": [
       {
-        "address": "0x758a66309FCcB6d834d3Cf91b326E2CaEa4bcbdB",
+        "address": "0x10C48c883c0Dcc852E214F2399fa29aA3D699424",
         "version": "0.1.0",
-        "implementation": "0xB38a41695b12a7C24A5948cAB35A886619686DaC"
+        "implementation": "0xDC7bECcDC68FDcbA3E6cfd203144B2bc23d63d3c"
       }
     ],
     "base-contract-project/Nftery": [
       {
-        "address": "0xd0dB1b9a4E70AA1728174b02BBC372207513B847",
+        "address": "0x8646f262ce3B6Dc432b697C3eB858635783534e3",
         "version": "0.1.0",
-        "implementation": "0x2f3464b7a67Ed2Bc9Aec90D268Cb18af99E526bE"
+        "implementation": "0x9B9b58e1E3ee91668C7D8A97470F0Df2c3bd6A10"
+      }
+    ],
+    "base-contract-project/Simple721": [
+      {
+        "address": "0x3188de92bce4B00Cd6b6bbeC4396f9ed9D8007FC",
+        "version": "0.1.0",
+        "implementation": "0x191E36cBa3DF054cde5e1EdBF33F2d843d228Acc"
       }
     ]
   },
   "zosversion": "2.2",
   "version": "0.1.0",
   "proxyAdmin": {
-    "address": "0x116B73bcd56102A6B98206a24AD0396cCb12E6b7"
+    "address": "0xbca2dE4128fC8FeA5142Dbb3baB617E6b56Ee553"
   }
 }

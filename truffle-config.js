@@ -31,12 +31,12 @@ module.exports = {
     }
   },
 
-  // solc: {
-  //   optimizer: {
-  //     enabled: true,
-  //     runs: 1
-  //   }
-  // },
+  solc: {
+    optimizer: {
+      enabled: true,
+      runs: 1
+    }
+  },
 
   mocha: {
     reporter: 'eth-gas-reporter',

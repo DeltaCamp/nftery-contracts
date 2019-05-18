@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "contracts": {
     "Migrations": "Migrations",
-    "Nftery": "Nftery"
+    "Nftery": "Nftery",
+    "Simple721": "Simple721"
   }
 }
