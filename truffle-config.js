@@ -12,7 +12,7 @@ module.exports = {
       network_id: '*'
     },
 
-    ropsten: {
+    rinkeby: {
       provider: () => new HDWalletProvider(
         process.env.HDWALLET_MNEMONIC,
         process.env.INFURA_PROVIDER_URL,
@@ -20,8 +20,29 @@ module.exports = {
         8 // notice that we unlock eight: which will be address[0] and address[1]
       ),
       network_id: 3,
-      gas: 1000000,
+      gas: 8000000,
       gasPrice: 10 * 1000000000
+    }
+  },
+
+  compilers: {
+    solc: {
+      version: "0.5.0",
+    }
+  },
+
+  solc: {
+    optimizer: {
+      enabled: true,
+      runs: 1
+    }
+  },
+
+  mocha: {
+    reporter: 'eth-gas-reporter',
+    reporterOptions : {
+      currency: 'USD',
+      gasPrice: 10
     }
   }
 };
